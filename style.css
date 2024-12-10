@@ -259,13 +259,20 @@ p {
         font-size: 24px;
         line-height: unset;
     }
-    .row {
+    /* .row {
         margin-top: 5%;
         display: grid;
-        
+       
         gap: 20px;
     }
-    
+     */
+
+
+     .row {
+        flex-direction: column;
+        align-items: center; /* Center align columns */
+    }
+
     .row1{
       display: flex;
         flex-direction: column;
@@ -278,6 +285,11 @@ p {
         display: flex;
           flex-direction: column;
       }
+
+      .row {
+        flex-direction: column;
+        align-items: center; /* Center align columns */
+    }
 }
 
 /* media section ended */
@@ -286,12 +298,21 @@ p {
     justify-content: space-around;
     gap: 2rem;
 }
-.row {
+/* .row {
     margin-top: 5%;
     display: grid;
-    grid-template-columns: 1fr;
+     
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+} */
+
+.row {
+    display: flex;
+    flex-wrap: wrap; /* Enables wrapping for smaller screens */
+    justify-content: space-between;
     gap: 20px;
 }
+
 
 .campus {
     width: 80%;
@@ -308,6 +329,7 @@ p {
     border-radius: 10px;
     margin-bottom: 30px;
     overflow: hidden;
+    
 }
 
 .campus-col img {
@@ -503,8 +525,23 @@ p {
     .cta h1 {
         font-size: 26px;
     }
-}
 
+    
+    .about-col h1 {
+        padding-top: 0;
+        padding-left: 10px;
+        justify-content: center;
+        align-items: center;    
+    }
+    
+   
+    .about-col p {
+        padding: 20px 10 30px;
+        font-weight:500; 
+        font-size: 20px;   
+    }
+      
+}
 
 
 .footer {
@@ -574,18 +611,20 @@ hr {
 .about-us {
     width: 80%;
     margin: auto;
-    padding-top: 80px;
+    padding-top: 70px;
     padding-bottom: 50px;
 }
 
 .about-col {
-    flex-basis: 48%;
-    padding: 30px 2px;
+    flex-basis: 88%;
+    padding: 25px 3px  4px;
+    margin-left: 40px;
+
 }
 
 .about-col img {
-    width: 70vw;
-  height: 100vh;
+    width: 100%;
+  height: auto;
   margin-left: 20px;
   display: flex;
   flex-direction: column;
@@ -597,14 +636,19 @@ hr {
 
 .about-col h1 {
     padding-top: 0;
+    padding-left: 60px;
+    justify-content: center;
+    align-items: center;    
 }
 
+
 .about-col p {
-    padding: 20px 0 25px;
-    font-weight:400;
-    
-    
+    padding: 20px 10 30px;
+    font-weight:500; 
+    line-height: 1.6;
+    font-size: 20px;   
 }
+
 
 
 .btn {
@@ -656,8 +700,11 @@ hr {
 
 .blog-right {
     flex-basis: 32%;
-    margin-left: 100px;
+    margin-left: 20px;
+
 }
+
+
 
 .blog-right h3 {
     background: #24f8c7;
@@ -714,9 +761,14 @@ hr {
     .Sub-header h1 {
         font-size: 24px;
     }
+
+    .blog-content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    
 }
-
-
 
 .loacation {
     width: 80%;
@@ -734,7 +786,7 @@ hr {
 }
 
 .content-col {
-    flex-basis: 48%;
+    flex-basis: 25%;
     margin-bottom: 30px;
 }
 
@@ -742,7 +794,10 @@ hr {
     display: flex;
     align-items: center;
     margin-bottom: 40px;
+    
+
 }
+
 
 .content-col div .fa {
     font-size: 28px;
@@ -770,4 +825,5 @@ hr {
     outline: none;
     box-sizing: border-box;
 }
+
 
