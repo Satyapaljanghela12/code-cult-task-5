@@ -1,3 +1,7 @@
+
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -63,6 +67,8 @@ nav .fab {
     margin: auto;
     transition: 0.5s;
 }
+
+
 
 .nav-links ul li:hover::after {
     width: 100%;
@@ -167,11 +173,15 @@ nav .fa {
  
 /* media section ended */
 
+.cover{
+    background: radial-gradient( pink,black);
+}
 .course {
     width: 80%;
     margin: auto;
     text-align: center;
     padding-top: 100px;
+    
 }
 
 .PageBlock {
@@ -185,12 +195,22 @@ nav .fa {
     font-size: 20px;
     font-weight: 400;
 }
+
+.achieve{
+       margin-left: 37%;
+}
+
+
+
+
 .verticalLine {
-    widtH: 2px;
+    width: 2px;
     height: 100px;
     background: #24f8c7;
     margin: 0 auto 40px;
 }
+
+
 
 .Clear {
     clear: both;
@@ -234,16 +254,17 @@ p {
     line-height: 1.1;
 }
 
-.course-col p:hover{
+/* .course-col p:hover{
       font-weight: 400;
       font-size: 17px;
-}
+} */
 
 .course-col p{
     transition: all 0.5s ease-in-out;
     font-size: 17px;
 
 }
+
 
 .course-col:hover {
     box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
@@ -323,6 +344,31 @@ p {
 
 }
 
+
+.camp2{
+    width: 100%;
+    display: block;
+    height: 287px;
+}
+
+.camp3{
+    width: 100%;
+    display: block;
+    height: 287px;
+}
+
+.coment{
+    background: radial-gradient(circle, blue,pink);
+
+}
+
+.account{
+     background: radial-gradient(circle,  black, whitesmoke); 
+    
+}
+
+
+
 .campus-col {
     position: relative;
     flex-basis: 32%;
@@ -334,6 +380,7 @@ p {
 
 .campus-col img {
     width: 100%;
+
     display: block;
 }
 
@@ -370,7 +417,14 @@ p {
     opacity: 1;
 }
 
+.faclearn{
+    background: radial-gradient(circle, whitesmoke,black);
+}
 
+.test{
+    background: radial-gradient(circle, blue, pink);
+
+}
 .facilities {
     width: 80%;
     margin: auto;
@@ -398,6 +452,16 @@ p {
 
 }
 
+.webdev{
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    transition: transform 0.4s ease-out;
+}
+
+
+
+
 @keyframes bounce {
     0%, 100% {
         transform: translateY(0);
@@ -415,9 +479,9 @@ p {
 
 .facilities-col p {
     padding: 0;
-   font-weight: 500;
+   font-weight: 600;
    font-size: 17px;
-   color: black;
+   color:black;
    
    
 
@@ -427,6 +491,7 @@ p {
     text-align: left;
     margin-top: 16px;
     margin-bottom: 15px;
+    
 }
 
 
@@ -465,11 +530,11 @@ p {
 }
 
 
-.testimonials-col p:hover{
+/* .testimonials-col p:hover{
               font-weight: 600;
 
 
-}
+} */
 
 
 
@@ -488,6 +553,95 @@ p {
    
 }
 
+
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin-top: 5%;
+    
+  }
+  
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
 
 
 
@@ -520,6 +674,18 @@ p {
     text-transform: uppercase;
     color: #fff;
 }
+.icons .fab {
+    color: white;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+    
+} 
+
+.icons .fab:hover{
+    color: #24f8c7;
+}
+
 
 @media (max-width: 700px) {
     .cta h1 {
@@ -534,58 +700,107 @@ p {
         align-items: center;    
     }
     
+    .about-col img{ 
+        display: block;
+      margin: 0 auto;
+      max-width: 100%;
+      height: auto;
+           
+    }
    
     .about-col p {
         padding: 20px 10 30px;
         font-weight:500; 
         font-size: 20px;   
     }
+    .footer-section p{
+        width: 100%;
+        margin-left: 80px;
+   }
       
 }
 
 
+
 .footer {
-    width: 100%;
-    text-align: center;
-    padding: 30px 0;
-    background-color:grey;
-   
-}
+    background-color: #333;
+    color: #fff;
+    padding: 20px 10px;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-section {
+    flex: 1 1 300px; 
+    margin: 10px;
+  }
+  
+  .footer-section h3 {
+    margin-bottom: 10px;
+    font-size: 30px;
+    margin-left: 20px;
+  }
 
-.footer p{
-    color: white;
-}
-.footer h4 {
-    font-weight: 600;
-    margin-bottom: 25px;
-    margin-top: 20px;
+  .footer-section h4{
+    margin-bottom: 10px;
+    font-size: 30px;
    
-}
-
-.footer a {
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section p{
+       width: 70%;
+  }
+  .footer-section ul li {
+    margin-bottom: 5px;
+  }
+  
+  .footer-section ul li a {
+    color: #fff;
     text-decoration: none;
-    color: white;
-    font-weight: 600;
-}
+  }
+  
+  .footer-section ul li a:hover {
+    text-decoration: none;
+    color: #0b775e;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-section {
+      text-align: center;
+    }
 
-.footer a:hover {
-    color: #24f8c7;
-}
-
-.icons .fab {
-    color: #5236f4;
-    margin: 0 13px;
-    cursor: pointer;
-    padding: 18px 0;
-}
-
-.icons .fab:hover{
-    color: #24f8c7;
-}
-
-.fa-heart {
-    color: #24f8c7;
-}
+    .about-col {
+        flex-basis: 8%;
+        padding: 25px 3px  4px;
+        margin-left: 10px;
+        
+    
+    }
+    
+  }
 
 hr {
     border: 0.01px solid #7777772a;
@@ -608,6 +823,10 @@ hr {
     margin-top: 100px;
 }
 
+.usual{
+    background: radial-gradient(pink,grey);
+
+}
 .about-us {
     width: 80%;
     margin: auto;
@@ -619,20 +838,20 @@ hr {
     flex-basis: 88%;
     padding: 25px 3px  4px;
     margin-left: 40px;
+    
 
 }
+
 
 .about-col img {
-    width: 100%;
-  height: auto;
-  margin-left: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-size: cover;
-    
+ 
+  display: block;
+      margin: 0 auto;
+      max-width: 100%;
+      height: auto;  
 }
+
+
 
 .about-col h1 {
     padding-top: 0;
@@ -644,12 +863,14 @@ hr {
 
 .about-col p {
     padding: 20px 10 30px;
-    font-weight:500; 
+    font-weight:700; 
     line-height: 1.6;
     font-size: 20px;   
 }
 
-
+.autotype{
+    color:pink;
+}
 
 .btn {
     border: 1px solid #5236f4;
@@ -661,7 +882,9 @@ hr {
     color: #fff;
 }
 
-
+.vlog{
+    background: radial-gradient(circle, black,whitesmoke);
+}
 
 .blog-content {
     width: 80%;
@@ -694,8 +917,9 @@ hr {
 }
 
 .blog-left p {
-    color: #999;
+    color:white;
     padding: 0;
+    font-weight: 400;
 }
 
 .blog-right {
@@ -720,10 +944,11 @@ hr {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: #555;
+    color:black;
     font-size: 20px;
     padding: 8px;
     box-sizing: border-box;
+    font-weight: 700;
 }
 
 .blog-right div:hover {
@@ -757,6 +982,19 @@ hr {
     margin: 10px 0;
 }
 
+
+.navigation{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.navigate{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 150px;
+    margin-left: 50%;
+}
 @media(max-width: 700px) {
     .Sub-header h1 {
         font-size: 24px;
@@ -786,7 +1024,7 @@ hr {
 }
 
 .content-col {
-    flex-basis: 25%;
+    flex-basis: 45%;
     margin-bottom: 30px;
 }
 
@@ -794,8 +1032,7 @@ hr {
     display: flex;
     align-items: center;
     margin-bottom: 40px;
-    
-
+    border-radius: 20px;
 }
 
 
